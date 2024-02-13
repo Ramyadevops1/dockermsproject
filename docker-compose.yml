@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: ramyatraining/paymoviess:latest
+    image: ramyatraining/paytmmoviess:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: ramyatraining/paytrainn:latest
+    image: ramyatraining/paytmtrainn:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: ramyatraining/paydthh:latest
+    image: ramyatraining/paytmdthh:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: ramyatraining/payrechargee:latest
+    image: ramyatraining/paytmrechargee:latest
     ports:
       - "84:80"
     deploy:
